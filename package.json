@@ -5,10 +5,14 @@
   "main": "index.js",
   "dependencies": {
     "concurrently": "^4.1.0",
-    "create-react-app": "^2.1.8"
+    "create-react-app": "^2.1.8",
+    "postinstall": "^0.4.2"
   },
   "devDependencies": {},
   "scripts": {
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "postinstall": "concurrently \"npm run install-server\" \"npm run install-client\"",
     "start-server": "cd server && nodemon server.js",
     "start-client": "cd client && npm start",
     "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
