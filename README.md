@@ -14,7 +14,7 @@ $ npm start
 ```
 
 #### This will run:
-* Server-side will create a database called test.
+* Server-side will create a database called MERN-setup.
 * Client-side (React) will make one post-request to create a user with an email.
 * Then fetch that user and display it.
 
@@ -29,6 +29,7 @@ $ npm start
 * React (frontend framwork
 * Axios (easier requests - NN)
 * Node-sass (to be able to import sass into react - NN)
+* Http-proxy-middleware (makes it possible to make requests with /api/request - NN)
 
 #### Others:
 * Postinstall (to call something after the npm install is complete - NN)
